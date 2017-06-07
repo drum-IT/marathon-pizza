@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.navbar {
+  border: 0;
+}
+
+h1 {
+  font-family: 'Coda Caption', sans-serif;
+}
+
+p, li, a {
+  font-family: 'Raleway', sans-serif;
+}
+
+nav .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+nav ul {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jumbotron {
+  background-image: url('../images/pizza-feature.jpg');
+  background-size: cover;
+  height: 93%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-bottom: 5px solid black;
+}
+
+.jumbotron h1 {
+  font-size: 8em;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-size: 1.25em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.jumbotron h1, .jumbotron p {
+  color: white;
+}
+
+.story-container {
+  display: flex;
+  justify-content: center;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 598px;
+}
+
+.story p {
+  text-align: center;
+  margin: 10px 0px 70px 0px;
+}
+
+.section-head {
+  background-color: black;
+  color: white;
+  width: 60%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px !important;
+  font-size: 1.5em;
+}
+
+.story h1 {
+  margin: 70px 0px;
+  font-size: 3.15em;
+}
+
+.eat {
+  background-image: url('../images/eat-here.jpg');
+}
