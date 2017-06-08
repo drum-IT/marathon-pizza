@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4 {
@@ -49,6 +50,9 @@ nav {
 .feature {
   background-image: url('../images/pizza-feature.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -74,6 +78,7 @@ nav {
 .detailer {
   display: flex;
   justify-content: space-between;
+  border-bottom: 5px solid #03256C;
 }
 
 .sections {
@@ -129,20 +134,65 @@ nav {
   margin: 0;
 }
 
+.sub-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.sub-detail h2 {
+  font-size: 2.5em;
+}
+
+.sub-detail p {
+  font-size: 1.5em;
+  margin: 10px 0px;
+}
+
+.sub-detail a {
+  font-size: 1.5em;
+  margin: 10px 0px;
+  display: block;
+}
+
 /* MENU */
 
-.menu {
-  width: 100%;
+#speciality-pizza-menu, #custom-pizza-menu, #pizza-topping-menu {
+  display: table;
+}
+
+#speciality-sub-menu, #sub-menu, #sub-menu-2 {
   display: none;
 }
 
-.menu-section {
+#speciality-sub-menu tr {
+  height: 55px;
+}
+
+#sub-menu-2 tr {
+  height: auto;
+}
+
+#sub-menu-2 td {
   width: 50%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-section {
+  width: 45%;
 }
 
 .menu-table {
   width: 100%;
-  height: 725px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -168,10 +218,55 @@ tbody td:nth-child(1n+2) {
   font-size: 1em;
 }
 
-tr {
-  height: 30px;
+tbody tr {
+  height: 70px;
+  transition: background-color 500ms;
+}
+
+#menu-left tbody tr:hover {
+  background-color: rgba(3,37,108, 0.2);
 }
 
 th {
   font-size: 1.25em;
+}
+
+#pizza-topping-menu tr {
+  height: 50px;
+}
+
+#pizza-topping-menu td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#menu-right {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+}
+
+/* LOCATION */
+
+#location {
+  height: 80%;
+  background-image: url('../images/eat-here.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#location .detail-heading, #location .sub-detail {
+  color: white;
+}
+
+/* FOOTER */
+
+footer {
+  height: 20%;
+  width: 100%;
+  background-color: #03256C;
 }
