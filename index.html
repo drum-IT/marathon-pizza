@@ -3,46 +3,176 @@
   <head>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Raleway:600,600i" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <title>Marathon Pizza</title>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Location &amp; Hours</a></li>
-          <li><a href="#contact">Menu</a></li>
-        </ul>
+
+    <nav>
+      <div class="logo">
+        <h3>MARATHON PIZZA</h3>
+      </div>
+      <div class="nav">
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#">Location &amp; Hours</a>
+        <a href="#">Contact</a>
       </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container-fluid">
-        <h1 class="display-3">MARATHON</h1>
-        <h1 class="display-3">PIZZA</h1>
-        <p class="lead">HOPKINTON, MA</p>
+
+    <div class="feature">
+      <h1>MARATHON</h1>
+      <h1>PIZZA</h1>
+      <p>HOPKINTON, MA</p>
+    </div>
+
+    <div class="detailer" id="menu">
+      <div class="sections">
+        <ul>
+          <li>
+            <a href="#" onclick="getMenu('pizza')">
+              <img src="assets/images/pizza.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="getMenu('subs')">
+              <img src="assets/images/subs.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="getMenu('salads')">
+              <img src="assets/images/salads.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="getMenu('pasta')">
+              <img src="assets/images/pasta.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="getMenu('sides')">
+              <img src="assets/images/sides.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="getMenu('drinks')">
+              <img src="assets/images/drinks.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="details">
+        <h1 class="detail-title">MENU</h1>
+        <h1 class="detail-heading" id="menu-selection">PIZZA</h1>
+        <div class="menu">
+          <div class="menu-section" id="menu-left">
+            <table class="menu-table">
+              <caption>SPECIALTY PIZZAS</caption>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>SMALL</th>
+                  <th>LARGE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="menu-item">MARGARITA</p>
+                    <p class="menu-description">MOZZARELLA, BASIL, TOMATO SAUCE</p>
+                  </td>
+                  <td>$8</td>
+                  <td>$15</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">MARATHON WHITE</p>
+                    <p class="menu-description">MOZZARELLA, RICOTTA, TOMATO SAUCE</p>
+                  </td>
+                  <td>$8</td>
+                  <td>$15</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">MARATHON SUPREME</p>
+                    <p class="menu-description">PEPPERONI, SAUSAGE, ONION, PEPPER, MUSHROOM</p>
+                  </td>
+                  <td>$10</td>
+                  <td>$19</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">STEAK BOMB</p>
+                    <p class="menu-description">STEAK, CHEESE, MUSHROOM, PEPPER, ONION</p>
+                  </td>
+                  <td>$10</td>
+                  <td>$19</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">B.L.T</p>
+                    <p class="menu-description">BACON, LETTUCE, TOMATO, MAYO</p>
+                  </td>
+                  <td>$9</td>
+                  <td>$17</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">CHICKEN BROCOLLI</p>
+                    <p class="menu-description">GRILLED CHICKEN, BROCOLLI, ALFREDO SAUCE</p>
+                  </td>
+                  <td>$8</td>
+                  <td>$15</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">CHICKEN BACON RANCH HAWAIIAN</p>
+                    <p class="menu-description">HAM, BACON, CHICKEN, PINEAPPLE</p>
+                  </td>
+                  <td>$8</td>
+                  <td>$15</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">MEDITERRANEAN</p>
+                    <p class="menu-description">SPINACH, FETA, OLIVES, GARLIC, TOMATO</p>
+                  </td>
+                  <td>$10</td>
+                  <td>$19</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">THE HERBIVORE</p>
+                    <p class="menu-description">MUSHROOM, PEPPER, ONION, BROCOLLI, OLIVES</p>
+                  </td>
+                  <td>$10</td>
+                  <td>$19</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="menu-item">THE CARNIVORE</p>
+                    <p class="menu-description">PEPPERONI, SAUSAGE, MEATBALL, HAM, SALAMI</p>
+                  </td>
+                  <td>$10</td>
+                  <td>$19</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="menu-section" id="menu-right">
+
+          </div>
+        </div>
+      </div>
+      <div class="sections">
+
       </div>
     </div>
-    <div class="container-fluid story-container">
-      <div class="story">
-        <p class="section-head">Our Story</p>
-        <h1>THE PASSION FOR PIZZA</h1>
-        <img src="assets/images/passion.jpg" alt="">
-        <p>Marathon has been serving Hopkinton's finest pizza since 1994, way back during the first Clinton administration. The thing is, we've never stopped improving, just like Windows 95.  Our famous pie has kicked it up a flavor notch with a delicious new Italian style crust, a secret blend of delectable cheeses, don't tell anyone, and mom's coveted plum tomato sauce recipe. Come visit us at our new location in scenic downtown Hopkinton for the best pizza, like ever. We love pizza. You love pizza. We have something in common. By the way, thank you for being you.</p>
-      </div>
-    </div>
-    <div class="jumbotron jumbotron-fluid eat">
-      <div class="container-fluid">
-        <h1 class="display-3">EAT HERE</h1>
-        <p class="lead">See Our Menu</p>
-      </div>
-    </div>
-    <div class="container-fluid story-container">
-      <div class="story">
-        <p class="section-head">Private Events</p>
-        <h1>FANCY A PIZZA PARTY?</h1>
-    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+
   </body>
 </html>

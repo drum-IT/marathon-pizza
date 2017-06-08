@@ -4,92 +4,174 @@ html, body {
   overflow-y: auto;
 }
 
-.navbar {
-  border: 0;
-}
-
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Coda Caption', sans-serif;
 }
 
-p, li, a {
+p, a {
   font-family: 'Raleway', sans-serif;
 }
 
-nav .container-fluid {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* NAVIGATION */
+
+nav {
+  position: fixed;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: #03256C;
+  color: white;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
 }
 
-nav ul {
-  width: 75%;
+.nav {
+  width: 80%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.jumbotron {
+/* FEATURE */
+
+.feature {
   background-image: url('../images/pizza-feature.jpg');
   background-size: cover;
-  height: 93%;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  display: flex;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #03256C;
+  color: white;
 }
 
-.jumbotron h1 {
+.feature h1 {
   font-size: 8em;
   text-align: center;
 }
 
-.jumbotron p {
+.feature p {
   font-size: 1.25em;
   text-align: center;
   letter-spacing: 2px;
 }
 
-.jumbotron h1, .jumbotron p {
-  color: white;
+/* DETAILER */
+
+.detailer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.story-container {
+.sections {
+  width: 130px;
   display: flex;
-  justify-content: center;
-}
-
-.story {
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  max-width: 598px;
+  margin: 80px 10px 0px 10px;
+  align-items: center;
 }
 
-.story p {
-  text-align: center;
-  margin: 10px 0px 70px 0px;
-}
-
-.section-head {
-  background-color: black;
-  color: white;
-  width: 60%;
-  height: 40px;
+.sections li {
+  height: 130px;
+  width: 130px;
+  background-color: #03256C;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px !important;
+  margin: 10px 0px;
+}
+
+.sections li img {
+  height: 90px;
+  width: 90px;
+  transition: height 500ms, width 500ms;
+}
+
+.sections li img:hover {
+  height: 110px;
+  width: 110px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.detail-title {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03256C;
+  color: white;
   font-size: 1.5em;
+  margin-bottom: 40px;
 }
 
-.story h1 {
-  margin: 70px 0px;
-  font-size: 3.15em;
+.detail-heading {
+  font-size: 4em;
+  margin: 0;
 }
 
-.eat {
-  background-image: url('../images/eat-here.jpg');
+/* MENU */
+
+.menu {
+  width: 100%;
+}
+
+.menu-section {
+  width: 50%;
+}
+
+.menu-table {
+  width: 100%;
+  height: 725px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.menu-table caption {
+  font-size: 1.75em;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-family: 'Coda Caption', sans-serif;
+}
+
+tbody td:nth-child(1n+2) {
+  text-align: center;
+  font-size: 1.25em;
+  width: 90px;
+}
+
+.menu-item {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.menu-description {
+  font-size: 1em;
+}
+
+tr {
+  height: 30px;
+}
+
+th {
+  font-size: 1.25em;
 }
