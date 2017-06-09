@@ -18,6 +18,7 @@ a {
   color: white;
 }
 
+
 /* NAVIGATION */
 
 nav {
@@ -44,6 +45,7 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+
 
 /* FEATURE */
 
@@ -72,6 +74,7 @@ nav {
   text-align: center;
   letter-spacing: 2px;
 }
+
 
 /* DETAILER */
 
@@ -157,6 +160,7 @@ nav {
   display: block;
 }
 
+
 /* MENU */
 
 #speciality-pizza-menu, #custom-pizza-menu, #pizza-topping-menu {
@@ -224,7 +228,7 @@ tbody tr {
 }
 
 #menu-left tbody tr:hover {
-  background-color: rgba(3,37,108, 0.2);
+  background-color: rgba(3, 37, 108, 0.2);
 }
 
 th {
@@ -248,6 +252,7 @@ th {
   /*justify-content: space-between;*/
 }
 
+
 /* LOCATION */
 
 #location {
@@ -262,6 +267,7 @@ th {
 #location .detail-heading, #location .sub-detail {
   color: white;
 }
+
 
 /* FOOTER */
 
