@@ -7,7 +7,7 @@ function hideTables() {
 
 function getMenu(item) {
 	if (item == 'pizza') {
-		document.getElementById('menu-selection').innerHTML = 'PIZZA';
+		document.getElementById('menu-selection').innerHTML = 'PIZZA &amp; CALZONES';
 		hideTables();
 		document.getElementById('speciality-pizza-menu').style.display = "table";
 		document.getElementById('custom-pizza-menu').style.display = "table";

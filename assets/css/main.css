@@ -15,7 +15,7 @@ p, a {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #E4E3D3;
 }
 
 
@@ -27,7 +27,7 @@ nav {
   height: 50px;
   width: 100%;
   background-color: #03256C;
-  color: white;
+  color: #E4E3D3;
 }
 
 .logo {
@@ -61,7 +61,7 @@ nav {
   align-items: center;
   justify-content: center;
   border-bottom: 5px solid #03256C;
-  color: white;
+  color: #E4E3D3;
 }
 
 .feature h1 {
@@ -82,6 +82,7 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom: 5px solid #03256C;
+  background-color: #E4E3D3;
 }
 
 .sections {
@@ -105,12 +106,12 @@ nav {
 .sections li img {
   height: 90px;
   width: 90px;
-  transition: height 500ms, width 500ms;
+  transition: height 300ms, width 300ms;
 }
 
 .sections li img:hover {
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
 }
 
 .details {
@@ -118,6 +119,7 @@ nav {
   flex-direction: column;
   align-items: center;
   width: 80%;
+  color: #30343F;
 }
 
 .detail-title {
@@ -127,7 +129,7 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: #03256C;
-  color: white;
+  color: #E4E3D3;
   font-size: 1.5em;
   margin-bottom: 40px;
 }
@@ -214,7 +216,7 @@ tbody td:nth-child(1n+2) {
 }
 
 .menu-item {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-bottom: 5px;
 }
 
@@ -225,10 +227,6 @@ tbody td:nth-child(1n+2) {
 tbody tr {
   height: 70px;
   transition: background-color 500ms;
-}
-
-#menu-left tbody tr:hover {
-  background-color: rgba(3, 37, 108, 0.2);
 }
 
 th {
@@ -249,7 +247,6 @@ th {
 #menu-right {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
 }
 
 
@@ -265,7 +262,7 @@ th {
 }
 
 #location .detail-heading, #location .sub-detail {
-  color: white;
+  color: #E4E3D3;
 }
 
 
